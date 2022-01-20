@@ -19,8 +19,11 @@ const handleUserInput = function (key) {
   }
   if (movement[key]){
     connection.write(movement[key]);
-
   }
+  if (key ==="c") {
+    connection.write("Say: WOW")
+  }
+
 
 };
 
